@@ -9,5 +9,9 @@ module.exports = {
     'lcov',
     'text'
   ],
-  coverageDirectory: 'reports/coverage'
+  coverageDirectory: 'reports/coverage',
+  collectCoverageFrom: [
+    'lib/**/*.js',
+    '!lib/**/tests/**/*.js'
+  ]
 }

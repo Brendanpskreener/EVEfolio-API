@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "jest": "jest",
+    "jest": "jest --config jest.conf.js",
     "test": "npm run lint && npm run jest",
     "report:coverage": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
