@@ -1,0 +1,28 @@
+service: EVEfolio-api
+
+provider:
+  name: aws
+  region: us-east-1
+  runtime: nodejs8.10
+
+package:
+  include:
+    - node_modules/**
+
+functions:
+  assets:
+    name: ${self:service}-fnname()
+    handler: lib/handler/assets/fnname().handler
+    events:
+      # - http:
+      #     path: v1/assets/nearme
+      #     method: post
+      #     cors: true
+      # - http:
+      #     path: v1/assets/nearlocation
+      #     method: post
+      #     cors: true
+      # - http:
+      #     path: v1/assets/static
+      #     method: get
+      #     cors: true
