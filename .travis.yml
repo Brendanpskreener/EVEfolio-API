@@ -5,6 +5,8 @@ node_js:
 cache:
   directories:
     - "node_modules"
+before_install:
+  # - npm i -g serverless
 install:
   - npm i
 script:
